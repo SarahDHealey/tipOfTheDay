@@ -26,7 +26,12 @@ module.exports = class deco extends Component {
       return (
         <View style={styles.container}>
           <Text>Tip of the day : {this.state.tip} </Text>
+
+          <Image source={{uri: this.state.tip_image}}
+         style={{width: 400, height: 400}} />
         </View>
+
+
       )
     } else {
       return (
